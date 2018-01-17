@@ -1190,9 +1190,49 @@
     }],
     "categorieProduit": [{
       "productName": "M354",
-      "productImg": "./assets/img/produit/moniteur-industriel/industrial-touch-monitor.jpg",
-      "productUrl": "",
-      "productSellerImg":"../../assets/img/partenaire/oteksys.png",
+      "productImg": "./assets/img/produit/moniteur-ordinateur-tactile/m354.jpg",
+      "productUrl": "http://www.poindus.com/en/products/display/display-m354/",
+      "productSellerImg":"../../assets/img/partenaire/oteksys.jpg",
+      "productSeller": "OTEKSYS",
+      "modele": [{
+        "modeleName": "",
+        "modeleLink": ""
+      }]
+    },{
+      "productName": "M365",
+      "productImg": "./assets/img/produit/moniteur-ordinateur-tactile/m365.jpg",
+      "productUrl": "http://www.poindus.com/en/products/display/display-m365/",
+      "productSellerImg":"../../assets/img/partenaire/oteksys.jpg",
+      "productSeller": "OTEKSYS",
+      "modele": [{
+        "modeleName": "",
+        "modeleLink": ""
+      }]
+    },{
+      "productName": "M363",
+      "productImg": "./assets/img/produit/moniteur-ordinateur-tactile/m363.jpg",
+      "productUrl": "http://www.poindus.com/en/products/display/display-m363/",
+      "productSellerImg":"../../assets/img/partenaire/oteksys.jpg",
+      "productSeller": "OTEKSYS",
+      "modele": [{
+        "modeleName": "",
+        "modeleLink": ""
+      }]
+    },{
+      "productName": "M467",
+      "productImg": "./assets/img/produit/moniteur-ordinateur-tactile/m467.jpg",
+      "productUrl": "http://www.poindus.com/en/products/display/display-m467/",
+      "productSellerImg":"../../assets/img/partenaire/oteksys.jpg",
+      "productSeller": "OTEKSYS",
+      "modele": [{
+        "modeleName": "",
+        "modeleLink": ""
+      }]
+    },{
+      "productName": "M168",
+      "productImg": "./assets/img/produit/moniteur-ordinateur-tactile/m168.jpg",
+      "productUrl": "http://www.poindus.com/en/products/display/display-m168/",
+      "productSellerImg":"../../assets/img/partenaire/oteksys.jpg",
       "productSeller": "OTEKSYS",
       "modele": [{
         "modeleName": "",
@@ -1252,6 +1292,36 @@
       "productName": "Large Format Wide-Aspect Ratio",
       "productImg": "./assets/img/produit/moniteur-ordinateur-tactile/Large Format Wide-Aspect Ratio.png",
       "productUrl": "https://www.elotouch.com/open-frame-touchscreens.html",
+      "productSellerImg":"../../assets/img/partenaire/elo.png",
+      "productSeller": "ELO",
+      "modele": [{
+        "modeleName": "",
+        "modeleLink": ""
+      }]
+    },{
+      "productName": "X-Series Touchscreen Computer",
+      "productImg": "./assets/img/produit/moniteur-ordinateur-tactile/x15.png",
+      "productUrl": "https://www.elotouch.com/touchscreen-computers.html",
+      "productSellerImg":"../../assets/img/partenaire/elo.png",
+      "productSeller": "ELO",
+      "modele": [{
+        "modeleName": "",
+        "modeleLink": ""
+      }]
+    },{
+      "productName": "E-Series Touchscreen Computer",
+      "productImg": "./assets/img/produit/moniteur-ordinateur-tactile/e15.png",
+      "productUrl": "https://www.elotouch.com/touchscreen-computers.html",
+      "productSellerImg":"../../assets/img/partenaire/elo.png",
+      "productSeller": "ELO",
+      "modele": [{
+        "modeleName": "",
+        "modeleLink": ""
+      }]
+    },{
+      "productName": "I-Series Touchscreen Computer",
+      "productImg": "./assets/img/produit/moniteur-ordinateur-tactile/i10.png",
+      "productUrl": "https://www.elotouch.com/touchscreen-computers.html",
       "productSellerImg":"../../assets/img/partenaire/elo.png",
       "productSeller": "ELO",
       "modele": [{
