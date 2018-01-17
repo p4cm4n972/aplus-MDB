@@ -1259,7 +1259,7 @@
         "modeleLink": ""
       }]
     },{
-      "productName": "healthcare-grade",
+      "productName": "Healthcare-grade",
       "productImg": "./assets/img/produit/moniteur-ordinateur-tactile/health-grade.png",
       "productUrl": "https://www.elotouch.com/touchscreen-monitors.html",
       "productSellerImg":"../../assets/img/partenaire/elo.png",
@@ -1322,6 +1322,16 @@
       "productName": "I-Series Touchscreen Computer",
       "productImg": "./assets/img/produit/moniteur-ordinateur-tactile/i10.png",
       "productUrl": "https://www.elotouch.com/touchscreen-computers.html",
+      "productSellerImg":"../../assets/img/partenaire/elo.png",
+      "productSeller": "ELO",
+      "modele": [{
+        "modeleName": "",
+        "modeleLink": ""
+      }]
+    },{
+      "productName": "C-Series Touchscreen Computers",
+      "productImg": "./assets/img/produit/moniteur-ordinateur-tactile/c22.png",
+      "productUrl": "https://www.elotouch.com/touchscreen-computers/c22.html",
       "productSellerImg":"../../assets/img/partenaire/elo.png",
       "productSeller": "ELO",
       "modele": [{
