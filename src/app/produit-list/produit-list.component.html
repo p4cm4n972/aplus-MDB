@@ -32,6 +32,7 @@
         <div>
           <img [src]='produit?.productSellerImg' [alt]="produit?.productSeller" class="img-fluid" style="max-width:80px;margin-bottom:5px">
         </div>
+        <p class="card-title" style="min-height:48px">{{produit?.productName}}</p>
         <div class="btn-group" dropdown *ngIf="produit.modele[0].modeleName">
           <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle waves-light" style="bottom:0;" mdbRippleRadius>
             series
@@ -41,7 +42,6 @@
 
           </div>
         </div>
-        <p class="card-title">{{produit?.productName}}</p>
 
         <!--/.Card content-->
 
