@@ -31,6 +31,8 @@ import { PartenaireService } from './partenaire.service';
 import { AlphaListPipe } from './alpha-list.pipe';
 import { FilterPipe } from './filter.pipe';
 import { SafePipe } from './safe.service';
+import { JobComponent } from './job/job.component';
+import { MentionComponent } from './mention/mention.component';
 
 
 @NgModule({
@@ -47,7 +49,9 @@ import { SafePipe } from './safe.service';
     PartenaireComponent,
     AlphaListPipe,
     FilterPipe,
-    SafePipe
+    SafePipe,
+    JobComponent,
+    MentionComponent
   ],
   imports: [
     MDBBootstrapModules.forRoot(),

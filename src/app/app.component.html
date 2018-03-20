@@ -1,29 +1,70 @@
-<mdb-navbar SideClass="navbar  navbar-expand-lg navbar-inverse fixed-top scrolling-navbar">
+<mdb-navbar SideClass="navbar  navbar-expand-lg navbar-inverse scrolling-navbar">
   <logo>
-      <p class="navbar-brand  font-weight-normal font-italic" style="color:#1565c0">Depuis 1988</p>
-    </logo>
-    <links>
-      <form class="form-inline waves-light waves-light ml-auto white-text" mdbRippleRadius>
-          <input class="form-control mr-sm-2" type="text"  aria-label="Search">
-          <button class="btn transparent btn-sm my-0 waves-light " type="submit" mdbRippleRadius>Search</button>
-      </form>
-     <div class="socio">
-       <a><i class="fa fa-2x fa-facebook-official white-text hoverable" aria-hidden="true"></i></a>
-       <a><i class="fa fa-2x fa-twitter-square white-text hoverable" aria-hidden="true"></i></a>
-       <a><i class="fa fa-2x fa-linkedin-square white-text hoverable" aria-hidden="true"></i></a>
-      </div>
+    <img class="navbar-brand " src="./assets/img/enseigne01.png" width="150px">
+  </logo>
+  <links>
+    <form class="form-inline waves-light waves-light ml-auto white-text" mdbRippleRadius>
+      <input class="form-control mr-sm-2" type="text" aria-label="Search">
+      <button class="btn transparent btn-sm my-0 waves-light " type="submit" mdbRippleRadius>
+        <i class="fa fa-2x fa-search" aria-hidden="true"></i>
+      </button>
+    </form>
+    <div class="socio">
+      <a>
+        <i class="fa fa-2x fa-facebook-official white-text hoverable" aria-hidden="true"></i>
+      </a>
+      <a>
+        <i class="fa fa-2x fa-twitter-square white-text hoverable" aria-hidden="true"></i>
+      </a>
+      <a>
+        <i class="fa fa-2x fa-linkedin-square white-text hoverable" aria-hidden="true"></i>
+      </a>
+      <button class="btn btn-sm" href="" >FR</button>
+      <button class="btn btn-sm" href="" >EN</button>
+    </div>
   </links>
 </mdb-navbar>
+ <!--Intro Section-->
+ <section class="view intro-2 hm-gradient">
+    <div class="full-bg-img">
+        <div class="container flex-center">
+            <div class="row flex-center pt-5 mt-3">
+                <div class="col-md-6 text-center text-md-left margins">
+                    <div class="white-text">
+                        <h1 class="h1-responsive wow fadeInLeft" data-wow-delay="0.3s">Make purchases with our app </h1>
+                            <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
+                            <h6 class="wow fadeInLeft" data-wow-delay="0.3s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem repellendus quasi fuga nesciunt dolorum nulla magnam veniam sapiente, fugiat! Commodi sequi non animi ea dolor molestiae iste.</h6>
+                            <br>
+                            <a class="btn btn-outline-white wow fadeInLeft waves-light" data-wow-delay="0.3s" mdbRippleRadius>Learn more</a>
+                            <a class="btn btn-outline-white wow fadeInLeft waves-light" data-wow-delay="0.3s" mdbRippleRadius>Download 
+                                <i class="fa fa-android left right" aria-hidden="true"></i>
+                                <i class="fa fa-apple left" aria-hidden="true"></i>
+                                <i class="fa fa-windows" aria-hidden="true"></i>
+                            </a>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 wow fadeInRight d-flex justify-content-center" data-wow-delay="0.3s">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!--Carousel Wrapper-->
-<mdb-carousel [animation]="'slide'" class="view  hm-purple-light">
+<div class="row">
+<div class="col-lg-6">
+<img class="w-100" src="../../assets/img/slide/slide-informatique.jpg">
+</div>
+<div class="col-lg-6">
+<mdb-carousel [animation]="'slide'" class="view  hm-purple-light" >
   <!--First slide-->
-  <mdb-slide>
-    <img class="d-block w-100" src="../../assets/img/slide/slide-informatique.jpg" alt="First slide"    >
-  </mdb-slide>
+  
   <!--/First slide-->
   <!--Second slide-->
   <mdb-slide>
-    <img class="d-block w-100" src="../../assets/img/slide/slide-industrie.jpg" alt="Second slide" >
+    <img class="d-block w-100" src="../../assets/img/slide/slide-industrie.jpg" alt="Second slide">
   </mdb-slide>
   <!--/Second slide-->
   <!--Third slide-->
@@ -33,26 +74,27 @@
   <!--/Third slide-->
   <!--Fourth slide-->
   <mdb-slide>
-    <img class="d-block w-100" src="../../assets/img/slide/slide-digital.jpg" alt="Fourth slide" >
+    <img class="d-block w-100" src="../../assets/img/slide/slide-digital.jpg" alt="Fourth slide">
   </mdb-slide>
   <!--/Fourth slide-->
   <!--Fifth slide-->
   <mdb-slide>
-    <img class="d-block w-100" src="../../assets/img/slide/slide-pos.jpg" alt="Fifth slide" >
+    <img class="d-block w-100" src="../../assets/img/slide/slide-pos.jpg" alt="Fifth slide">
   </mdb-slide>
   <!--/Fifth slide-->
-  
+
 </mdb-carousel>
 <!--/.Carousel Wrapper-->
-
+</div>
+</div>
 
 
 <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark blue darken-3 scrolling-navbar">
   <logo>
-      <a class="navbar-brand" [routerLink]="['/']">
-        <img src="../../assets/img/logo.png" height="30" alt="">
-      </a>
-    </logo>
+    <a class="navbar-brand" [routerLink]="['/']">
+      <img src="../../assets/img/logo.png" height="30" alt="">
+    </a>
+  </logo>
   <links>
     <div class="navbar-nav ">
       <a class="nav-item nav-link active waves-light" [routerLink]="['/home']" mdbRippleRadius>ACCUEIL
@@ -62,22 +104,56 @@
       <a class="nav-item nav-link waves-light" [routerLink]="['/competence']" mdbRippleRadius>NOS COMPÉTENCES</a>
       <a class="nav-item nav-link waves-light" [routerLink]="['/produit']" mdbRippleRadius>NOS PRODUITS</a>
       <a class="nav-item nav-link waves-light" [routerLink]="['/partenaire']" mdbRippleRadius>NOS PARTENAIRES</a>
-      <a class="nav-item nav-link waves-light"  [routerLink]="['/news']" mdbRippleRadius>ACTUALITÉS</a>
+      <a class="nav-item nav-link waves-light" [routerLink]="['/news']" mdbRippleRadius>ACTUALITÉS</a>
       <a class="nav-item nav-link waves-light" [routerLink]="['/contact']" mdbRippleRadius>CONTACT</a>
+      <a class="nav-item nav-link waves-light" [routerLink]="['/recrutement']" mdbRippleRadius>RECRUTEMENT</a>
 
     </div>
   </links>
 </mdb-navbar>
-<router-outlet ></router-outlet>  
- <!--Footer-->
-<footer class="page-footer blue darken-3 center-on-small-only fixed-bottom" >
-<!--Copyright-->
-<div class="footer-copyright">
-  <div class="container-fluid">
-    © 2017 Copyright:
-    <a href="https://aplus-sa.com"> aplus-sa.com </a>
+<router-outlet></router-outlet>
+<!--Footer-->
+<footer class="page-footer blue darken-3  fixed-bottom">
+  <!--Footer Links-->
+  <div class="container">
+      <div class="row">
+
+          <!--First column-->
+          <div class="col-md-6">
+              <h5 class="title"></h5>
+              <div class="socio">
+                  <a>
+                    <i class="fa fa-2x fa-facebook-official white-text hoverable" aria-hidden="true"></i>
+                  </a>
+                  <a>
+                    <i class="fa fa-2x fa-twitter-square white-text hoverable" aria-hidden="true"></i>
+                  </a>
+                  <a>
+                    <i class="fa fa-2x fa-linkedin-square white-text hoverable" aria-hidden="true"></i>
+                  </a>
+                </div>
+          </div>
+          <!--/.First column-->
+
+          <!--Second column-->
+          <div class="col-md-6">
+              <h5 class="title"></h5>
+              <ul>
+                  <li><a [routerLink]="['/mention']"> Mentions Légales </a></li>
+                  <li><a href="#">Plan du site</a></li>
+              </ul>
+          </div>
+          <!--/.Second column-->
+      </div>
   </div>
-</div>
-<!--/.Copyright-->
+  <!--/.Footer Links-->
+  <!--Copyright-->
+  <div class="footer-copyright">
+    <div class="container-fluid">
+      © 2017 Copyright:
+      <a href="https://aplus-sa.com">APLUS Système automation </a>
+    </div>
+  </div>
+  <!--/.Copyright-->
 </footer>
 <!--/.Footer-->

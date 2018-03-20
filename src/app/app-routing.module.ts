@@ -12,6 +12,8 @@ import { NewsComponent } from './news/news.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProduitSellerComponent } from './produit-seller/produit-seller.component';
 import { PartenaireComponent } from './partenaire/partenaire.component';
+import { JobComponent } from './job/job.component';
+import { MentionComponent } from './mention/mention.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -23,7 +25,9 @@ const routes: Routes = [
   { path: 'produit/:id/:ref', component: ProduitSellerComponent },
   { path: 'partenaire', component: PartenaireComponent },
   { path: 'news', component: NewsComponent },
-  { path: 'contact', component: ContactComponent }
+  { path: 'contact', component: ContactComponent },
+  { path: 'recrutement', component: JobComponent },
+  { path: 'mention', component: MentionComponent }
 ];
 
 @NgModule({

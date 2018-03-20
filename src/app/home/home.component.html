@@ -33,20 +33,20 @@
 <div class="row jumbotron">
   <!--Section: Magazine v.2-->
   <div class="col-lg-8 mx-auto">
-<section class="section mx-auto magazine-section">
+<section class="section mx-auto magazine-section h-70" style="overflow-y:scroll">
   
       <!--Grid row-->
-      <div class="row text-left">
+      <div class="row text-left mx-auto">
   
           <!--Grid column-->
           <div class="col-lg-6 col-md-12">
   
               <!--Featured news-->
-              <div class="single-news">
+              <div class="single-news" (click)="onSelect(news)">
   
                   <!--Image-->
                   <div mdbRippleRadius class="view overlay hm-white-slight waves-light">
-                      <img src="http://www.aplus-sa.com/tl_files/client/actualites/MPL_xeon_serveur_durci_2.png" alt="Wider sample post image">
+                      <img src="{{newsList[0]?.illustration}}"alt="Wider sample post image">
                       <a>
                           <div class="mask"></div>
                       </a>
@@ -75,13 +75,13 @@
               <!--Small news-->
               <div class="single-news" *ngFor="let news of newsList">
   
-                  <div class="row">
-                      <div class="col-md-3">
+                  <div class="row" [routerLink]="['/news']">
+                      <div class="col-md-3" >
   
                           <!--Image-->
                           <div mdbRippleRadius class="view overlay hm-white-slight waves-light">
                               <img src="{{news.vignette}}" alt="Minor sample post image">
-                              <a>
+                              <a >
                                   <div class="mask"></div>
                               </a>
                           </div>
