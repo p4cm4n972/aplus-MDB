@@ -23,7 +23,7 @@ export class ProduitListComponent implements OnInit {
     private _router: Router,
     private _produitService: ProduitService,
     private location: Location ) {
-    this.cat = this._route.snapshot.paramMap.get('id'); 
+    this.cat = this._route.snapshot.paramMap.get('id');
     }
 
   ngOnInit() {
