@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 import { ActualiteService } from '../actualite.service';
 import { IActualite } from './mock-actualite';
@@ -11,8 +11,15 @@ import { IActualite } from './mock-actualite';
 export class NewsComponent implements OnInit {
   errorMessage: string;
   newsList: IActualite[] = [];
+  selectNews: IActualite;
   constructor( private _actualiteService: ActualiteService) { }
+@ViewChild('news') public newsModal;
 
+  onSelect(news: IActualite) {
+    console.log(news);
+    this.selectNews = news;
+    this.newsModal.show(news);
+  }
   ngOnInit(): void {
     this._actualiteService.getArticle()
     .subscribe( newsList => {

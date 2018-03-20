@@ -1,152 +1,124 @@
 <div class="container-fluid view hm-bluegrey-slight">
     <div class="container">
-  <div class="row jumbotron">
-    <div class="col-lg-6">
-  <!--Section heading-->
-  <img src="./assets/img/enseigne01.png" alt="APLUS picto logo" class="d-block mx-auto" width="250px"><h2 class="section-heading h1 my-5 d-block">Les solutions d'un Leader</h2>
-  
-      <!--Section description-->
-      <p class="section-description">Nos solutions sont mises en œuvre dans les secteurs du commerce et de l’industrie, du transport et de la logistique, des télécommunications, de la monétique, de l’agroalimentaire, de la défense et la santé. </p>
-    </div>
-    <div class="col-lg-6">
-  <!--Carousel Wrapper-->
-<mdb-carousel class="carousel slide carousel-fade" [type]="'carousel-thumbnails'" [animation]="'fade'">
-    <!--First slide-->
-    <mdb-slide>
-        <img class="d-block mx-auto w-100" src="./assets/img/slide-nouveaux/slide01.png" alt="First slide">
-    </mdb-slide>
-    <!--/First slide-->
-    <!--Second slide-->
-    <mdb-slide>
-        <img class="d-block mx-auto w-100" src="./assets/img/slide-nouveaux/slide02.png" alt="Second slide">
-    </mdb-slide>
-    <!--/Second slide-->
-    <!--Third slide-->
-    <mdb-slide>
-        <img class="d-block mx-auto w-100" src="./assets/img/slide-nouveaux/slide03.png" alt="Third slide">
-    </mdb-slide>
-    <!--/Third slide-->
-</mdb-carousel>
-<!--/.Carousel Wrapper-->
-</div>
-</div>
-<div class="row jumbotron">
-  <!--Section: Magazine v.2-->
-  <div class="col-lg-8 mx-auto">
-<section class="section mx-auto magazine-section h-70" style="overflow-y:scroll">
-  
-      <!--Grid row-->
-      <div class="row text-left mx-auto">
-  
-          <!--Grid column-->
-          <div class="col-lg-6 col-md-12">
-  
-              <!--Featured news-->
-              <div class="single-news">
-  
-                  <!--Image-->
-                  <div mdbRippleRadius class="view overlay hm-white-slight waves-light">
-                      <img src="{{newsList[0]?.illustration}}"alt="Wider sample post image">
-                      <a>
-                          <div class="mask"></div>
-                      </a>
-                  </div>
-  
-                  <!--Excerpt-->
-                  <div class="news-data">
-                      <a href="" class="deep-orange-text"><h6><i class="fa fa-newspaper-o"></i><strong> Actualités</strong></h6></a>
-                      <p><strong><i class="fa fa-clock-o"></i> {{newsList[0]?.date}}</strong></p>
-                  </div>
-  
-                  <h4><a><strong>{{newsList[0]?.titre}}</strong></a></h4>
-  
-                  <p align="justify">{{newsList[0]?.content.slice(0, 150)}}...
-                  </p>
-  
-              </div>
-              <!--/Featured news-->
-  
-          </div>
-          <!--Grid column-->
-  
-          <!--Grid column-->
-          <div class="col-lg-6 col-md-12">
-  
-              <!--Small news-->
-              <div class="single-news" *ngFor="let news of newsList">
-  
-                  <div class="row" [routerLink]="['/news']">
-                      <div class="col-md-3" >
-  
-                          <!--Image-->
-                          <div mdbRippleRadius class="view overlay hm-white-slight waves-light">
-                              <img src="{{news.vignette}}" alt="Minor sample post image">
-                              <a >
-                                  <div class="mask"></div>
-                              </a>
-                          </div>
-                      </div>
-  
-                      <!--Excerpt-->
-                      <div class="col-md-9">
-                          <p><strong>{{news.date}}</strong></p>
-                          <a>{{news.resume.slice(0,100)}}...
-                              <i class="fa fa-angle-right"></i>
-                          </a>
-                      </div>
-  
-                  </div>
-              </div>
-              <!--/Small news-->
-  
-              <!--Small news-->
-             
-          </div>
-          <!--Grid column-->
-  
-      </div>
-      <!--Grid row-->
-  
-  </section>
-</div>
-<div class="col-lg-4">
-   <!--Section: Features v.2-->
-<section class="section feature-box">
+  <!--Section: Blog v.1-->
+<section class="section pb-3 text-center text-lg-left">
+
+        <!--Section heading-->
+        <h1 class="section-heading h1 pt-4"></h1>
+        <!--Section description-->
+        <p class="section-description"></p>
         <!--Grid row-->
-        <div class="row features-small jumbotron">
+        <div class="row">
     
             <!--Grid column-->
-            <div class="col-md-12 mb-r">
-                <div class="col-1 col-md-2 float-left">
-                    <i class="fa fa-bullhorn blue-grey-text"></i>
-                </div>
-                <div class="col-10 col-md-9 col-lg-10 float-right">
-                    <h4 class="feature-title">Conception</h4>
-                    <a class="btn btn-primary btn-sm ml-0 waves-light" [routerLink]="['/competence']" mdbRippleRadius>Learn more</a>
+            <div class="col-lg-7 col-xl-6 offset-xl-1 pb-3">
+                <!--Featured image-->
+                <div class="view overlay hm-white-slight waves-light" mdbRippleRadius>
+                    <img src="../assets/img/slide/slide-industrie.jpg" class="img-responsive h-100" alt="Sample image for first version of blog listing" >
+                    <a>
+                        <div class="mask"></div>
+                    </a>
                 </div>
             </div>
             <!--Grid column-->
     
             <!--Grid column-->
-            <div class="col-md-12 mb-r">
-                <div class="col-1 col-md-2 float-left">
-                    <i class="fa fa-cogs blue-grey-text"></i>
+            <div class="col-lg-5 col-xl-4">
+                <!--Excerpt-->
+                <a href="" class="green-text"><h6 class="font-bold pb-1"><i class="fa fa-laptop"></i></h6></a>
+                <h4 class="mb-4"><strong>Informatique Industrielle.</strong></h4>
+                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis debitis aut rerum.</p>
+            </div>
+            <!--Grid column-->
+    
+        </div>
+        <!--Grid row-->
+    
+        <hr class="hr-width mb-5 mt-5 pb-3">
+    
+        <!--Grid row-->
+        <div class="row">
+    
+            <!--Grid column-->
+            <div class="col-lg-4 col-xl-4 offset-xl-1 pb-3">
+                <!--Excerpt-->
+                <a href="" class="pink-text"><h6 class="font-bold pb-1"><i class="fa fa-lock"></i></h6></a>
+                <h4 class="mb-4"><strong>Défense & Sécurité.</strong></h4>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident et dolorum fuga.</p>
+                <p>by <a><strong>Carine Fox</strong></a>, 14/08/2016</p>
+                <a class="btn btn-pink mb-3 waves-light" mdbRippleRadius>Read more</a>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-7 col-xl-6 mb-5">
+                <!--Featured image-->
+                <div class="view overlay hm-white-slight waves-light" mdbRippleRadius>
+                    <img src="../assets/img/slide/slide-defense.jpg" class="img-responsive h-100" alt="Second image in the first version of blog listing">
+                    <a>
+                        <div class="mask"></div>
+                    </a>
                 </div>
-                <div class="col-10 col-md-9 col-lg-10 float-right">
-                    <h4 class="feature-title">Production</h4>
-                    <a class="btn btn-success btn-sm ml-0 waves-light" [routerLink]="['/competence']" mdbRippleRadius>Learn more</a>
+            </div>
+            <!--Grid column-->
+    
+        </div>
+        <!--Grid row-->
+    
+        <hr class="hr-width mb-5 mt-4 pb-3">
+    
+        <!--Grid row-->
+        <div class="row pb-5">
+    
+            <!--Grid column-->
+            <div class="col-lg-7 col-xl-6 offset-xl-1 pb-3">
+                <!--Featured image-->
+                <div class="view overlay hm-white-slight waves-light" mdbRippleRadius>
+                    <img src="../assets/img/slide/slide-digital.jpg" class="img-responsive h-100" alt="Thrid image in the blog listing.">
+                    <a>
+                        <div class="mask"></div>
+                    </a>
                 </div>
             </div>
             <!--Grid column-->
     
             <!--Grid column-->
-            <div class="col-md-12 mb-r">
-                <div class="col-1 col-md-2 float-left">
-                    <i class="fa fa-dashboard blue-grey-text"></i>
-                </div>
-                <div class="col-10 col-md-9 col-lg-10 float-right">
-                    <h4 class="feature-title">Services</h4>
-                    <a class="btn btn-warning btn-sm ml-0 waves-light" [routerLink]="['/competence']" mdbRippleRadius>Learn more</a>
+            <div class="col-lg-5 col-xl-4">
+                <!--Excerpt-->
+                <a href="" class="indigo-text"><h6 class="font-bold pb-1"><i class="fa fa-print"></i></h6></a>
+               <h4 class="mb-4"><strong>Interfaces tactiles & Impression</strong></h4>
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro qui dolorem ipsum quia sit amet, consectetur.</p>
+                <p>by <a><strong>Carine Fox</strong></a>, 11/08/2016</p>
+                <a class="btn btn-indigo mb-3 waves-light" mdbRippleRadius>Read more</a>
+            </div>
+            <!--Grid column-->
+    
+        </div>
+        <!--Grid row-->
+        <hr class="hr-width mb-5 mt-5 pb-3">
+    
+        <!--Grid row-->
+        <div class="row">
+    
+            <!--Grid column-->
+            <div class="col-lg-5 col-xl-4 offset-xl-1 pb-3">
+                <!--Excerpt-->
+                <a href="" class="pink-text"><h6 class="font-bold pb-1"><i class="fa fa-shopping-basket"></i></h6></a>
+                <h4 class="mb-4"><strong>Point de vente.</strong></h4>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident et dolorum fuga.</p>
+                <p>by <a><strong>Carine Fox</strong></a>, 14/08/2016</p>
+                <a class="btn btn-pink mb-3 waves-light" mdbRippleRadius>Read more</a>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-7 col-xl-4 mb-6">
+                <!--Featured image-->
+                <div class="view overlay hm-white-slight waves-light" mdbRippleRadius>
+                    <img src="../assets/img/slide/slide-pos.jpg" class="img-responsive h-100" alt="Second image in the first version of blog listing">
+                    <a>
+                        <div class="mask"></div>
+                    </a>
                 </div>
             </div>
             <!--Grid column-->
@@ -155,14 +127,7 @@
         <!--Grid row-->
     
     </section>
-    <!--Section: Features v.2-->
-    
-</div>
-  <!--Section: Magazine v.2-->
-</div>
-<!--Section: Features v.3-->
-
-    <!--Section: Features v.3-->
+    <!--Section: Blog v.1-->
 </div>
 
 </div>

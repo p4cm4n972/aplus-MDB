@@ -10,82 +10,53 @@
       </button>
     </form>
     <div class="socio">
-      <a>
-        <i class="fa fa-2x fa-facebook-official white-text hoverable" aria-hidden="true"></i>
-      </a>
-      <a>
-        <i class="fa fa-2x fa-twitter-square white-text hoverable" aria-hidden="true"></i>
-      </a>
-      <a>
-        <i class="fa fa-2x fa-linkedin-square white-text hoverable" aria-hidden="true"></i>
-      </a>
-      <button class="btn btn-sm" href="" >FR</button>
-      <button class="btn btn-sm" href="" >EN</button>
+        <a class="btn-floating btn-fb waves-light" mdbRippleRadius>
+            <i class="fa fa-facebook"> </i>
+          </a>
+          <a class="btn-floating btn-tw waves-light" mdbRippleRadius>
+            <i class="fa fa-twitter"> </i>
+          </a>
+          <a class="btn-floating btn-li waves-light" mdbRippleRadius>
+            <i class="fa fa-linkedin"> </i>
+          </a>
     </div>
   </links>
 </mdb-navbar>
- <!--Intro Section-->
- <section class="view intro-2 hm-gradient">
-    <div class="full-bg-img">
-        <div class="container flex-center">
-            <div class="row flex-center pt-5 mt-3">
-                <div class="col-md-6 text-center text-md-left margins">
-                    <div class="white-text">
-                        <h1 class="h1-responsive wow fadeInLeft" data-wow-delay="0.3s">Make purchases with our app </h1>
-                            <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
-                            <h6 class="wow fadeInLeft" data-wow-delay="0.3s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem repellendus quasi fuga nesciunt dolorum nulla magnam veniam sapiente, fugiat! Commodi sequi non animi ea dolor molestiae iste.</h6>
-                            <br>
-                            <a class="btn btn-outline-white wow fadeInLeft waves-light" data-wow-delay="0.3s" mdbRippleRadius>Learn more</a>
-                            <a class="btn btn-outline-white wow fadeInLeft waves-light" data-wow-delay="0.3s" mdbRippleRadius>Download 
-                                <i class="fa fa-android left right" aria-hidden="true"></i>
-                                <i class="fa fa-apple left" aria-hidden="true"></i>
-                                <i class="fa fa-windows" aria-hidden="true"></i>
-                            </a>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 wow fadeInRight d-flex justify-content-center" data-wow-delay="0.3s">
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!--Carousel Wrapper-->
 <div class="row">
-<div class="col-lg-6">
-<img class="w-100" src="../../assets/img/slide/slide-informatique.jpg">
-</div>
-<div class="col-lg-6">
-<mdb-carousel [animation]="'slide'" class="view  hm-purple-light" >
-  <!--First slide-->
-  
-  <!--/First slide-->
-  <!--Second slide-->
-  <mdb-slide>
-    <img class="d-block w-100" src="../../assets/img/slide/slide-industrie.jpg" alt="Second slide">
-  </mdb-slide>
-  <!--/Second slide-->
-  <!--Third slide-->
-  <mdb-slide>
-    <img class="d-block w-100" src="../../assets/img/slide/slide-defense.jpg" alt="Third slide">
-  </mdb-slide>
-  <!--/Third slide-->
-  <!--Fourth slide-->
-  <mdb-slide>
-    <img class="d-block w-100" src="../../assets/img/slide/slide-digital.jpg" alt="Fourth slide">
-  </mdb-slide>
-  <!--/Fourth slide-->
-  <!--Fifth slide-->
-  <mdb-slide>
-    <img class="d-block w-100" src="../../assets/img/slide/slide-pos.jpg" alt="Fifth slide">
-  </mdb-slide>
-  <!--/Fifth slide-->
+  <div class="col-lg-6">
+    <img class="w-100" src="../../assets/img/slide/slide-informatique.jpg">
+  </div>
+  <div class="col-lg-6">
+    <mdb-carousel [animation]="'slide'" class="view  hm-purple-light">
+      <!--First slide-->
 
-</mdb-carousel>
-<!--/.Carousel Wrapper-->
-</div>
+      <!--/First slide-->
+      <!--Second slide-->
+      <mdb-slide>
+        <img class="d-block w-100" src="../../assets/img/slide/slide-industrie.jpg" alt="Second slide">
+      </mdb-slide>
+      <!--/Second slide-->
+      <!--Third slide-->
+      <mdb-slide>
+        <img class="d-block w-100" src="../../assets/img/slide/slide-defense.jpg" alt="Third slide">
+      </mdb-slide>
+      <!--/Third slide-->
+      <!--Fourth slide-->
+      <mdb-slide>
+        <img class="d-block w-100" src="../../assets/img/slide/slide-digital.jpg" alt="Fourth slide">
+      </mdb-slide>
+      <!--/Fourth slide-->
+      <!--Fifth slide-->
+      <mdb-slide>
+        <img class="d-block w-100" src="../../assets/img/slide/slide-pos.jpg" alt="Fifth slide">
+      </mdb-slide>
+      <!--/Fifth slide-->
+
+    </mdb-carousel>
+    <!--/.Carousel Wrapper-->
+  </div>
 </div>
 
 
@@ -116,35 +87,37 @@
 <footer class="page-footer blue darken-3  fixed-bottom">
   <!--Footer Links-->
   <div class="container">
-      <div class="row">
+    <div class="row">
 
-          <!--First column-->
-          <div class="col-md-6">
-              <h5 class="title"></h5>
-              <div class="socio">
-                  <a>
-                    <i class="fa fa-2x fa-facebook-official white-text hoverable" aria-hidden="true"></i>
-                  </a>
-                  <a>
-                    <i class="fa fa-2x fa-twitter-square white-text hoverable" aria-hidden="true"></i>
-                  </a>
-                  <a>
-                    <i class="fa fa-2x fa-linkedin-square white-text hoverable" aria-hidden="true"></i>
-                  </a>
-                </div>
-          </div>
-          <!--/.First column-->
-
-          <!--Second column-->
-          <div class="col-md-6">
-              <h5 class="title"></h5>
-              <ul>
-                  <li><a [routerLink]="['/mention']"> Mentions Légales </a></li>
-                  <li><a href="#">Plan du site</a></li>
-              </ul>
-          </div>
-          <!--/.Second column-->
+      <!--First column-->
+      <div class="col-md-6">
+        <h5 class="title"></h5>
+        <!--Social buttons-->
+        <div class="text-center mb-3">
+          <a class="btn-floating btn-small btn-fb waves-light" mdbRippleRadius>
+            <i class="fa fa-facebook"> </i>
+          </a>
+          <a class="btn-floating btn-small btn-tw waves-light" mdbRippleRadius>
+            <i class="fa fa-twitter"> </i>
+          </a>
+          <a class="btn-floating btn-small btn-li waves-light" mdbRippleRadius>
+            <i class="fa fa-linkedin"> </i>
+          </a>
+        </div>
+        <!--/.Social buttons-->
       </div>
+      <!--/.First column-->
+
+      <!--Second column-->
+      <div class="col-md-6">
+        <h5 class="title"></h5>
+        <div class="text-center mt-4">
+          <a [routerLink]="['/mention']" style="padding-right:20px;"> Mentions Légales </a>
+          <a href="#">Plan du site</a>
+        </div>
+      </div>
+      <!--/.Second column-->
+    </div>
   </div>
   <!--/.Footer Links-->
   <!--Copyright-->
