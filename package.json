@@ -37,6 +37,7 @@
     "express": "^4.16.2",
     "font-awesome": "^4.7.0",
     "hammerjs": "^2.0.8",
+    "jshint": "^2.9.5",
     "ng-mdb-pro": "git+https://oauth2:eUyYrhxwztUMxvnByNXy@git.mdbootstrap.com/mdb/angular/ng-pro.git",
     "rxjs": "^5.5.2",
     "screenfull": "^3.3.0",
