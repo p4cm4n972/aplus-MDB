@@ -55,7 +55,7 @@ import { MentionComponent } from './mention/mention.component';
   ],
   imports: [
     MDBBootstrapModules.forRoot(),
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'APLUS SA' }),
     AppRoutingModule,
     HttpClientModule,
     FormsModule,

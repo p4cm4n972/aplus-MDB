@@ -1,15 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { SafeService } from './safe.service';
+import { SafePipe } from './safe.service';
 
-describe('SafeService', () => {
+describe('SafePipe', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [SafeService]
+      providers: [SafePipe]
     });
   });
 
-  it('should be created', inject([SafeService], (service: SafeService) => {
+  it('should be created', inject([SafePipe], (service: SafePipe) => {
     expect(service).toBeTruthy();
   }));
 });
